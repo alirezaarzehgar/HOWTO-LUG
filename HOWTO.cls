@@ -26,7 +26,13 @@
 \usepackage{ifthen}
 
 \usepackage{xepersian}
-\settextfont{IRNazanin}
+\settextfont{IRNazanin}[
+  Extension=.ttf,
+  BoldFont=*Bold,
+  ItalicFont=*Italic,
+  BoldItalicFont=*Bold,
+  Path=fonts/
+]
 
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
