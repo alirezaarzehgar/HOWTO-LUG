@@ -11,6 +11,12 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue,breaklinks=true]{hyperref}
+\hypersetup{
+  pdftitle={راهنمای گروه کاربران لینوکس},
+  pdfauthor={علیرضا ارزه گر},
+  pdflang={fa-IR},
+  pdfkeywords={lug, لاگ}
+}
 \ifpdf\pdfcompresslevel=9\fi
 \usepackage{babel}
 \usepackage{epsfig}
