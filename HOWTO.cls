@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{pkg}[2024/09/21 HOWTO Class]
+\ProvidesClass{HOWTO}[2024/09/21 HOWTO Class]
 
 \LoadClass[a4paper]{book}
 
