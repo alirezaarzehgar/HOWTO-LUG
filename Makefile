@@ -1,15 +1,25 @@
-MAIN := User-Group-HOWTO.tex
+MAIN_FILE := User-Group-HOWTO.tex
+DOC_CLASS := HOWTO.cls
+TEX_FILES := $(shell find sections/ -type f -iname '*.tex')
 
-all: out
-	xelatex -output-directory=out/ ${MAIN}
-	xelatex -output-directory=out/ ${MAIN}
+OUTPUT_DIRECTORIY := out
+PDF_FILE := ${OUTPUT_DIRECTORIY}/${MAIN_FILE:%.tex=%.pdf}
 
-out:
-	mkdir -p out
+XELATEX_FLAGS := -output-directory=${OUTPUT_DIRECTORIY} -file-line-error -halt-on-error -interaction nonstopmode
 
-view:
-	okular out/*.pdf
+all: ${PDF_FILE}
+
+${PDF_FILE}: ${MAIN_FILE} ${DOC_CLASS} ${TEX_FILES} ${OUTPUT_DIRECTORIY}
+	xelatex ${XELATEX_FLAGS} ${MAIN_FILE}
+	xelatex ${XELATEX_FLAGS} ${MAIN_FILE}
+
+${OUTPUT_DIRECTORIY}:
+	mkdir -p ${OUTPUT_DIRECTORIY}
+
+view: ${PDF_FILE}
+	@xdg-open ${PDF_FILE}
 
 clean:
-	rm -rf out
+	@rm -rvf ${OUTPUT_DIRECTORIY}
 
+.PHONY: clean view
