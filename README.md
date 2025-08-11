@@ -65,6 +65,7 @@
 # اطلاعات فنی پروژه
 در ابتدا فایل `sgml` این پروژه از وبسایت linuxmafia گرفته شده و به‌واسطه ابزار `linuxdoc` با دستور زیر تبدیل به فایل `LaTeX` شد:
 ```bash
+sudo apt install linuxdoc-tools-latex
 linuxdoc -B latex -m -c utf-8 -l en User-Group-HOWTO.sgml
 ```
 پس از آن ساختار آن تغییر کرد و ترجمه شد و به وضعیت کنونی رسید. فایل `sgml` آن هنوز در دسترس است.
