@@ -46,31 +46,13 @@
 
 \@newctr{footnote}[page]
 
-\newtcolorbox{note}[1][]{
+\newtcolorbox{hintbox}[1][]{
   enhanced jigsaw,
   borderline east={1pt}{0pt}{black},
   sharp corners,
   boxrule=0pt,
   fonttitle={\large\bfseries},
   coltitle={black},
-  title={نکته:\ },
-  attach title to upper,
-  right=0pt,
-  top=0pt,
-  bottom=0pt,
-  frame hidden,
-  baseline={\tcb@height-2\kvtcb@boxsep+\baselineskip-2\lineskip},
-  #1
-}
-
-\newtcolorbox{caveat}[1][]{
-  enhanced jigsaw,
-  borderline east={1pt}{0pt}{black},
-  sharp corners,
-  boxrule=0pt,
-  fonttitle={\large\bfseries},
-  coltitle={black},
-  title={هشدار:\ },
   attach title to upper,
   right=0pt,
   top=0pt,
