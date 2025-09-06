@@ -85,9 +85,6 @@
 \newcommand{\lre}[1]{\emph{\lr{#1}}}
 \newcommand{\lrfn}[1]{\footnote{\lr{#1}}}
 
-\newcommand\ftnt{\begingroup\catcode`\#=12\relax\@ftnt}
-\newcommand{\@ftnt}[2]{\endgroup\emph{\lr{#1}}\LTRfootnote{\tturl{#2}}}
-
 \newcommand{\irluginfo}[5]{
 \item {\large #1}
 \begin{description}
