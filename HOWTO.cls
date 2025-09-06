@@ -61,13 +61,3 @@
   baseline={\tcb@height-2\kvtcb@boxsep+\baselineskip-2\lineskip},
   #1
 }
-
-\newcommand{\irluginfo}[5]{
-\item {\large #1}
-\begin{description}
-\ifthenelse{\equal{#2}{}}{}{\item [وبسایت] \url{#2}}
-\ifthenelse{\equal{#3}{}}{}{\item [کانال تلگرام] \url{#3}}
-\ifthenelse{\equal{#4}{}}{}{\item [گروه تلگرام] \url{#4}}
-\ifthenelse{\equal{#5}{}}{}{\item [گیت‌] \url{#5}}
-\end{description}
-}
