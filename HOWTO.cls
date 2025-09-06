@@ -79,9 +79,6 @@
   #1
 }
 
-\newcommand\tturl{\begingroup\catcode`\#=12\relax\@tturl}
-\newcommand{\@tturl}[1]{\endgroup\texttt{\url{#1}}}
-
 \newcommand{\irluginfo}[5]{
 \item {\large #1}
 \begin{description}
