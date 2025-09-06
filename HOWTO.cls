@@ -92,7 +92,6 @@
 \newcommand{\@fftnt}[2]{\endgroup\emph{#1}\LTRfootnote{\tturl{#2}}}
 
 \newcommand{\tftnt}[2]{\emph{\lr{#1}}\LTRfootnote{\lr{#2}}}
-\newcommand{\tfftnt}[2]{\emph{#1}\LTRfootnote{\lr{#2}}}
 
 \newcommand{\irluginfo}[5]{
 \item {\large #1}
