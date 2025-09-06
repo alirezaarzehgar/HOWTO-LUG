@@ -39,6 +39,7 @@
   BoldItalicFont=*Bold,
   Path=fonts/
 ]
+\setlatintextfont[Scale=1.0]{Times New Roman}
 
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
@@ -88,4 +89,3 @@
 \ifthenelse{\equal{#5}{}}{}{\item [گیت‌] \url{#5}}
 \end{description}
 }
-
