@@ -1,0 +1,17 @@
+    body {
+        font-family: 'Tanha', 'Vazir', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        color: #333;
+        background-color: #fff;
+        text-align: right;
+        direction: rtl;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    p {
+        margin-bottom: 1.2em;
+        text-align: justify;
+        text-justify: inter-word;
+        line-height: 1.8;
+    }
